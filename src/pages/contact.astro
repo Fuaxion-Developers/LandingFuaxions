@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContactForm from '../components/sections/ContactForm.astro';
+import Title from '../components/shared/Title.astro';
+import Paragraph from '../components/shared/Paragraph.astro';
+---
+
+<Layout title="Contacto">
+  <main class="relative pt-32 lg:pt-36 overflow-hidden">
+    <div class="text-center mb-12">
+      <Title >Contáctanos</Title>
+      <br>
+      <Paragraph>
+        Estamos aquí para ayudarte. 
+        <br>
+        Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.
+      </Pa>
+    </div>
+    
+    <div class="max-w-3xl mx-auto">
+      <ContactForm />
+    </div>
+  </main>
+</Layout>
+
