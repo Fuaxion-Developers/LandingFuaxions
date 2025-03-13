@@ -121,7 +121,7 @@ form.addEventListener("submit", function (e) {
   
   form?.addEventListener('submit', function(e) {
   
-      const hCaptcha = form.querySelector('textarea[name=h-captcha-response]')?.value;
+      const hCaptcha = (form.querySelector('textarea[name=h-captcha-response]') as HTMLTextAreaElement)?.value;
   
       if (!hCaptcha) {
           e.preventDefault();
